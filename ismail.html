@@ -1,0 +1,173 @@
+ <!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Ismail</title>
+    <---------------- Internal css --------------
+    <style>
+        body{
+            margin: 5%;
+            padding: 0;
+        }
+        
+      
+        .nav li a{
+            padding: 10px 35px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        .nav li :hover {
+            background-color: rgb(151, 126, 240);
+            color: rgb(255, 252, 252);
+            padding: 10px 35px;
+        }
+    
+    </style>
+</head>
+<body >
+    <div style="display: flex; justify-content: right; align-items: left; background-color: rgb(235, 222, 250);">
+        <ul style="list-style: none; display: flex;" class="nav">
+            <li style=" margin-right:50px ;">
+                <a style="text-decoration: none; overflow: hidden;" href="#">Home
+                    <ul style="list-style: none; overflow: hidden;">
+                        <li style="display: block;"><a  style="text-decoration: none;" href="#">Gallry</a></li>
+                        <li style="display: block;"><a  style="text-decoration: none;"href="#">Photo</a></li>
+                        <li style="display: block;"><a style="text-decoration: none;" href="#">Events</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li style=" margin-right:50px ;">
+                <a style="text-decoration: none;" href="#">About</a>
+            </li>
+            <li style=" margin-right:50px ;">
+                <a style="text-decoration: none;" href="#">Blogs</a>
+            </li>
+            <li style=" margin-right:50px ;">
+                <a style="text-decoration: none;" href="#">Contact</a>
+            </li>
+            <li style=" margin-right:50px ;">
+                <a style="text-decoration: none;" href="#">Helpline</a>
+            </li>
+        </ul>
+    </div>
+    <h1 style="background-color: blue; color: aliceblue;">I am Md Ismail hossain
+
+    </h1>
+    <p style="background-color: green;color: white;">Ismail</p>
+    <b style="background-color: aqua;color: yellow;">hossain</b>
+    <div style="background-color: blue; color: white;">MD</div>
+
+
+
+<div style="display: flex; justify-content: center; align-items: center;">
+
+  <img style="display: block;" src="img.png" alt="" width="300px" st>
+
+
+
+
+</div>
+    <p style="background-color: brown; color: white; font-size: 26px; font-weight: 700; text-align: justify; padding: 10%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum ullam, incidunt voluptatum omnis in eaque id amet. Sapiente obcaecati magnam perferendis neque debitis enim temporibus cumque quis harum hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente mollitia expedita, eius totam et deleniti accusantium tenetur ab architecto ipsam maxime maiores corrupti iste in vel perspiciatis. Vero, iure. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores tempore, consequuntur eveniet rem perferendis sit. Id dolorem tempore amet itaque hic, aliquam praesentium nemo culpa aperiam nesciunt? Incidunt, magnam amet?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum vero rem vitae soluta asperiores impedit suscipit reprehenderit debitis alias facere. Illo pariatur repudiandae placeat adipisci amet fugiat, corporis accusamus qui. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat inventore ab consequatur atque velit minima placeat expedita, quisquam amet, neque reprehenderit tempora aliquam sapiente explicabo architecto error asperiores adipisci!</p>
+</body>
+</html> 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Navbar</title>
+    <style>
+        /* Navbar container */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#link1">Link 1</a>
+                <a href="#link2">Link 2</a>
+                <a href="#link3">Link 3</a>
+            </div>
+        </div> 
+        <a href="#contact">Contact</a>
+    </div>
+</body>
+</html>
+
